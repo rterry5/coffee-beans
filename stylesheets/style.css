@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans&display=swap");
+/* line 3, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* line 7, ../sass/style.scss */
+* p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.75;
+  letter-spacing: 0.25em;
+}
+/* line 12, ../sass/style.scss */
+* h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 3em;
+}
+
+/* line 19, ../sass/style.scss */
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+}
+
+/* line 26, ../sass/style.scss */
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 690px) {
+  /* line 33, ../sass/style.scss */
+  .column {
+    flex-direction: column;
+  }
+}
+
+/* line 42, ../sass/style.scss */
+.nav a {
+  text-decoration: none;
+  margin: 0 1em;
+}
+/* line 46, ../sass/style.scss */
+.nav li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 50, ../sass/style.scss */
+.nav__container {
+  background-color: #e4d2bb;
+}
+/* line 53, ../sass/style.scss */
+.nav__row {
+  position: relative;
+}
+/* line 56, ../sass/style.scss */
+.nav__logo {
+  position: absolute;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width: 690px) {
+  /* line 56, ../sass/style.scss */
+  .nav__logo {
+    position: relative;
+  }
+}
+/* line 68, ../sass/style.scss */
+.nav__column {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* line 78, ../sass/style.scss */
+.header {
+  background-image: url("/assets/images/coffee-beans.jpg");
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* line 96, ../sass/style.scss */
+.coffee__image {
+  height: 150px;
+}
+/* line 99, ../sass/style.scss */
+.coffee figcaption {
+  font-family: "Open Sans", sans-serif;
+}
